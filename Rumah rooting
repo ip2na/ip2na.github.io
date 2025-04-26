@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<head>
-    <!-- Meta Tags untuk Google Search Console -->
-    <meta name="google-site-verification" content="your_verification_code_here" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Root Check Tool</title>
+    <meta name="description" content="Panduan lengkap tentang efek menggunakan HP rooted vs non-rooted, tutorial unlock bootloader untuk Samsung, Infinix, dan Xiaomi">
+    <meta name="keywords" content="root HP, keuntungan root, kerugian root, unlock bootloader, Xiaomi, Samsung, Infinix">
+    <meta name="author" content="Nama Anda">
+    <meta property="og:title" content="Panduan Lengkap Root HP dan Unlock Bootloader">
+    <meta property="og:description" content="Temukan semua informasi tentang root HP dan cara unlock bootloader berbagai merek">
+    <meta property="og:image" content="URL_GAMBAR_ANDA">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-</head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooting HP: Kelebihan & Kekurangan</title>
+    <title>Panduan Root HP & Unlock Bootloader</title>
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
         }
 
         body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f5f6fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
         .container {
@@ -40,591 +40,158 @@
             padding: 2rem;
         }
 
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            animation: fadeInDown 1s;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .content-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
         .card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
+            background: white;
             border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transform: translateY(0);
-            transition: all 0.3s ease;
+            transition: 0.3s all ease;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
 
-        h2 {
-            color: #4CAF50;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
+        .animated {
+            animation: fadeIn 1s ease-out;
         }
 
-        ul {
-            list-style-type: none;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        li {
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            animation: fadeInLeft 0.5s ease forwards;
-            opacity: 0;
-        }
-
-        .cons li {
-            animation-name: fadeInRight;
-        }
-
-        li:nth-child(1) { animation-delay: 0.2s; }
-        li:nth-child(2) { animation-delay: 0.4s; }
-        li:nth-child(3) { animation-delay: 0.6s; }
-        li:nth-child(4) { animation-delay: 0.8s; }
-        li:nth-child(5) { animation-delay: 1s; }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .content-container {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-        .warning {
-            color: #ff4444;
-            font-weight: bold;
-            margin-top: 2rem;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>📱 Rooting HP: Kelebihan & Kekurangan</h1>
-            <p>Pelajari konsekuensi sebelum melakukan root pada perangkat Anda</p>
-        </header>
-
-        <div class="content-container">
-            <div class="card pros">
-                <h2>✅ Kelebihan Rooting</h2>
-                <ul>
-                    <li>Akses penuh ke sistem operasi</li>
-                    <li>Bisa menghapus bloatware</li>
-                    <li>Instal custom ROM dan modifikasi tampilan</li>
-                    <li>Optimasi performa dan baterai</li>
-                    <li>Akses ke aplikasi root-only</li>
-                </ul>
-            </div>
-
-            <div class="card cons">
-                <h2>❌ Kekurangan Rooting</h2>
-                <ul>
-                    <li>Garansi hilang</li>
-                    <li>Risiko keamanan meningkat</li>
-                    <li>Potensi brick device</li>
-                    <li>Update OTA mungkin tidak bekerja</li>
-                    <li>Aplikasi tertentu tidak bisa dijalankan</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="warning">
-            ⚠️ Rooting harus dilakukan dengan pengetahuan cukup dan risiko ditanggung pengguna!
-        </div>
-    </div>
-</body>
-<head>
-    <!-- Bagian head sama seperti sebelumnya -->
-</head>
-<body>
-    <div class="container">
-        <!-- Bagian header dan content-container sama seperti sebelumnya -->
-
-        <!-- Tambahan section penjelasan tentang HP root -->
-        <div class="info-section card" style="margin-top: 3rem; animation: fadeInUp 1s;">
-            <h2>📖 Memahami Rooting Smartphone</h2>
-            
-            <div class="info-content">
-                <h3>Apa Itu Rooting?</h3>
-                <p>
-                    Rooting adalah proses untuk mendapatkan akses privileged control (dikenal sebagai root access) 
-                    pada sistem operasi Android. Ini analog dengan jailbreaking di perangkat iOS. Dengan rooting, 
-                    pengguna dapat melewati batasan yang diterapkan oleh pabrikan dan operator seluler.
-                </p>
-
-                <h3>Pertimbangan Sebelum Rooting:</h3>
-                <p>
-                    Sebelum memutuskan untuk melakukan root, pertimbangkan beberapa faktor penting:
-                </p>
-                <ul>
-                    <li>➤ Tujuan utama rooting</li>
-                    <li>➤ Kompatibilitas perangkat</li>
-                    <li>➤ Kemampuan teknis pengguna</li>
-                    <li>➤ Risiko yang mungkin terjadi</li>
-                    <li>➤ Status garansi perangkat</li>
-                </ul>
-
-                <h3>Alternatif Rooting:</h3>
-                <p>
-                    Untuk pengguna yang ingin mendapatkan beberapa keuntungan rooting tanpa risiko tinggi, 
-                    beberapa alternatif yang bisa dicoba:
-                </p>
-                <div class="alternatives">
-                    <div class="alt-item">
-                        <h4>ADB Debugging</h4>
-                        <p>Menghapus bloatware melalui USB debugging tanpa root</p>
-                    </div>
-                    <div class="alt-item">
-                        <h4>Launcher Custom</h4>
-                        <p>Menggunakan launcher pihak ketiga untuk kustomisasi tampilan</p>
-                    </div>
-                    <div class="alt-item">
-                        <h4>Aplikasi Optimasi</h4>
-                        <p>Tools seperti Greenify untuk optimasi baterai tanpa root</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="warning">
-            ⚠️ Rooting harus dilakukan dengan pengetahuan cukup dan risiko ditanggung pengguna!
-        </div>
-    </div>
-
-    <style>
-        /* Tambahkan style ini di dalam tag style yang sudah ada */
-        
-        .info-section {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            line-height: 1.6;
-        }
-
-        .info-section h2 {
-            color: #00bcd4;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
-
-        .info-section h3 {
-            color: #4CAF50;
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-        }
-
-        .info-section p {
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
-        .alternatives {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .alt-item {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            border-radius: 10px;
-            border-left: 4px solid #00bcd4;
-        }
-
-        .alt-item h4 {
-            color: #FFC107;
-            margin-bottom: 0.5rem;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .info-section {
-                padding: 1.5rem;
-            }
-            
-            .info-section h2 {
-                font-size: 1.5rem;
-            }
-            
-            .alt-item {
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
-</body>
-<head>
-    <!-- ... (bagian head tetap sama) ... -->
-</head>
-<body>
-    <div class="container">
-        <!-- ... (bagian sebelumnya tetap sama) ... -->
-
-        <!-- Section Sumber Referensi -->
-        <div class="sources-section card" style="margin-top: 2rem; animation: fadeInUp 1s;">
-            <h2>📚 Sumber Referensi</h2>
-            
-            <div class="source-grid">
-                <div class="source-item">
-                    <div class="source-icon">📱</div>
-                    <h3>XDA Developers</h3>
-                    <p>Komunitas developer Android terbesar di dunia</p>
-                    <a href="https://forum.xda-developers.com/" target="_blank" rel="noopener noreferrer">
-                        Kunjungi Situs
-                    </a>
-                </div>
-
-                <div class="source-item">
-                    <div class="source-icon">⚙️</div>
-                    <h3>Android Open Source Project</h3>
-                    <p>Dokumentasi resmi sistem Android open source</p>
-                    <a href="https://source.android.com/" target="_blank" rel="noopener noreferrer">
-                        Baca Dokumentasi
-                    </a>
-                </div>
-
-                <div class="source-item">
-                    <div class="source-icon">🔓</div>
-                    <h3>Magisk GitHub</h3>
-                    <p>Tools rooting open source paling populer</p>
-                    <a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener noreferrer">
-                        Lihat Repository
-                    </a>
-                </div>
-
-                <div class="source-item">
-                    <div class="source-icon">📘</div>
-                    <h3>Android Developers</h3>
-                    <p>Dokumentasi resmi pengembangan Android</p>
-                    <a href="https://developer.android.com/" target="_blank" rel="noopener noreferrer">
-                        Pelajari Lebih Lanjut
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="warning">
-            ⚠️ Rooting harus dilakukan dengan pengetahuan cukup dan risiko ditanggung pengguna!
-        </div>
-    </div>
-
-    <style>
-        /* Tambahkan style ini di dalam tag style yang sudah ada */
-
-        .sources-section {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .source-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .source-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1.5rem;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .source-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .source-item::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #4CAF50, #2196F3);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .source-item:hover::after {
-            transform: scaleX(1);
-        }
-
-        .source-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .source-item h3 {
-            color: #4CAF50;
-            margin-bottom: 0.8rem;
-            font-size: 1.2rem;
-        }
-
-        .source-item p {
-            font-size: 0.9rem;
-            margin-bottom: 1.2rem;
-            line-height: 1.5;
-            color: #ddd;
-        }
-
-        .source-item a {
-            display: inline-block;
-            padding: 8px 20px;
-            background: rgba(76, 175, 80, 0.2);
-            color: #4CAF50;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .source-item a:hover {
-            background: #4CAF50;
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .source-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .source-item {
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
-</body>
-<head>
-    <!-- ... (bagian head tetap sama) ... -->
-</head>
-<body>
-    <div class="container">
-        <!-- ... (bagian sebelumnya tetap sama) ... -->
-
-        <!-- Section Tools Rooting -->
-        <div class="tools-section card" style="margin-top: 2rem; animation: fadeInUp 1s;">
-            <h2>🔧 Tools Rooting Populer</h2>
-            
-            <div class="brand-grid">
-                <!-- Samsung -->
-                <div class="brand-card">
-                    <div class="brand-header samsung">
-                        <img src="https://img.icons8.com/color/48/samsung.png" alt="Samsung"/>
-                        <h3>Samsung</h3>
-                    </div>
-                    <ul>
-                        <li><a href="https://odindownload.com/" target="_blank" rel="noopener">Odin</a> - Flashing tool resmi</li>
-                        <li><a href="https://forum.xda-developers.com/c/samsung.535/" target="_blank" rel="noopener">XDA Forum</a> - Panduan khusus</li>
-                        <li><a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener">Magisk</a> - Root tanpa TWRP</li>
-                    </ul>
-                </div>
-
-                <!-- Xiaomi -->
-                <div class="brand-card">
-                    <div class="brand-header xiaomi">
-                        <img src="https://img.icons8.com/color/48/xiaomi.png" alt="Xiaomi"/>
-                        <h3>Xiaomi</h3>
-                    </div>
-                    <ul>
-                        <li><a href="https://en.miui.com/unlock/" target="_blank" rel="noopener">Mi Unlock</a> - Bootloader unlock resmi</li>
-                        <li><a href="https://twrp.me/Devices/Xiaomi/" target="_blank" rel="noopener">TWRP</a> - Custom recovery</li>
-                        <li><a href="https://xiaomitools.com/" target="_blank" rel="noopener">Xiaomi Tool</a> - All-in-one tool</li>
-                    </ul>
-                </div>
-
-                <!-- Infinix -->
-                <div class="brand-card">
-                    <div class="brand-header infinix">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732084.png" alt="Infinix" style="width:48px;height:48px;"/>
-                        <h3>Infinix</h3>
-                    </div>
-                    <ul>
-                        <li><a href="https://spflashtool.com/" target="_blank" rel="noopener">SP Flash Tool</a></li>
-                        <li><a href="https://forum.xda-developers.com/f/infinix.12289/" target="_blank" rel="noopener">XDA Forum</a></li>
-                        <li><a href="https://www.getdroidtips.com/" target="_blank" rel="noopener">Droid Tips</a></li>
-                    </ul>
-                </div>
-
-                <!-- Tecno -->
-                <div class="brand-card">
-                    <div class="brand-header tecno">
-                        <img src="https://www.tecno-mobile.com/favicon.ico" alt="Tecno"/>
-                        <h3>Tecno</h3>
-                    </div>
-                    <ul>
-                        <li><a href="https://spflashtool.com/" target="_blank" rel="noopener">SP Flash Tool</a></li>
-                        <li><a href="https://forum.xda-developers.com/f/tecno.12309/" target="_blank" rel="noopener">XDA Forum</a></li>
-                        <li><a href="https://www.androidinfotech.com/" target="_blank" rel="noopener">Android Infotech</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tools-warning">
-                ⚠️ Gunakan tools hanya dari sumber terpercaya dan sesuai dengan model perangkat!
-            </div>
-        </div>
-
-        <!-- ... (bagian sumber referensi dan warning tetap sama) ... -->
-    </div>
-
-    <style>
-        /* Tambahkan style ini di dalam tag style yang sudah ada */
-
-        .tools-section h2 {
-            color: #FF9800;
-            margin-bottom: 2rem;
-        }
-
-        .brand-grid {
+        .tool-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
-        .brand-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .brand-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .brand-header {
+        .tool-card {
+            background: white;
             padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border-left: 5px solid var(--secondary);
+            transition: 0.3s all ease;
         }
 
-        .brand-header h3 {
-            margin: 0;
-            font-size: 1.4rem;
+        .tool-card:hover {
+            border-left-color: var(--accent);
         }
 
-        .brand-card ul {
-            padding: 1.5rem;
-            margin: 0;
-        }
-
-        .brand-card li {
-            margin-bottom: 1rem;
-            padding: 0.8rem;
-            background: rgba(255,255,255,0.03);
-            border-radius: 6px;
-        }
-
-        .brand-card a {
-            color: #4CAF50;
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--secondary);
+            color: white;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            border-radius: 25px;
+            transition: 0.3s all ease;
         }
 
-        .brand-card a:hover {
-            color: #45a049;
+        .button:hover {
+            background: var(--accent);
+            transform: scale(1.05);
         }
 
-        .tools-warning {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: rgba(255, 68, 68, 0.1);
-            border-radius: 8px;
+        footer {
+            background: var(--primary);
+            color: white;
             text-align: center;
-            color: #ff4444;
-            border: 1px solid rgba(255,68,68,0.3);
+            padding: 2rem;
+            margin-top: 4rem;
         }
 
-        /* Warna khusus header brand */
-        .samsung { background: linear-gradient(135deg, #1428a0, #2a52be); }
-        .xiaomi { background: linear-gradient(135deg, #ff6700, #ff8300); }
-        .infinix { background: linear-gradient(135deg, #000, #414141); }
-            .brand-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .brand-header {
+        @media (max-width: 768px) {
+            .container {
                 padding: 1rem;
-            }
-            
-            .brand-header h3 {
-                font-size: 1.2rem;
             }
         }
     </style>
+</head>
+<body>
+    <header class="header animated">
+        <h1>Panduan Lengkap Root HP & Unlock Bootloader</h1>
+        <p>Semua yang perlu Anda ketahui tentang HP Rooted dan Non-Rooted</p>
+    </header>
+
+    <div class="container">
+        <section class="card animated">
+            <h2>Efek Menggunakan HP Rooted</h2>
+            <div class="pros-cons">
+                <h3>Keuntungan:</h3>
+                <ul>
+                    <li>Full control sistem operasi</li>
+                    <li>Bisa menghapus bloatware</li>
+                    <li>Custom ROM dan Kernel</li>
+                    <li>Akses root-only apps</li>
+                </ul>
+
+                <h3>Kerugian:</h3>
+                <ul>
+                    <li>Garansi hilang</li>
+                    <li>Risiko security meningkat</li>
+                    <li>Potensi brick device</li>
+                    <li>Update OTA mungkin terhambat</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card animated">
+            <h2>Tools Unlock Bootloader</h2>
+            <div class="tool-list">
+                <div class="tool-card">
+                    <h3>Samsung</h3>
+                    <p>Tools Resmi: Odin Tool</p>
+                    <a href="https://forum.xda-developers.com/t/official-stock-firmware-odin-for-samsung-galaxy-phones.5185677/" class="button" target="_blank">Download</a>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Xiaomi</h3>
+                    <p>Mi Unlock Tool Official</p>
+                    <a href="https://en.miui.com/unlock/" class="button" target="_blank">Download</a>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Infinix</h3>
+                    <p>SP Flash Tool + Auth File</p>
+                    <a href="https://spflashtools.com/" class="button" target="_blank">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card animated">
+            <h2>Sumber Terpercaya</h2>
+            <ul>
+                <li><a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a></li>
+                <li><a href="https://forum.mi-id.id/" target="_blank">MIUI Official Forum</a></li>
+                <li><a href="https://www.gsmarena.com" target="_blank">GSMArena</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© <span id="tahun"></span> Panduan Root HP. All rights reserved.</p>
+        <p>Disclaimer: Rooting dapat membatalkan garansi. Lakukan dengan risiko sendiri.</p>
+    </footer>
+
+    <script>
+        // Tahun otomatis
+        document.getElementById('tahun').textContent = new Date().getFullYear();
+
+        // Animasi scroll
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if(cardTop < window.innerHeight - 100) {
+                    card.classList.add('animated');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
